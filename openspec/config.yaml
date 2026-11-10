@@ -1,20 +1,24 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  Project: Comira (漫镜头) — a mobile AI camera app.
+  Step 1 (this change): a local camera shell built with Flutter for Android/iOS.
+  No AI, no upload, no account in step 1. Camera preview, capture, and save to
+  the system photo library only.
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+  Step 2+ will add the AI rendering pipeline described in docs/项目方案.md and
+  openspec/changes/add-ai-comic-camera-mvp/. The camera UI should stay decoupled
+  from the capture implementation so the plugin-based camera can be replaced by
+  a native frame pipeline later.
+
+  Tech stack: Flutter 3.44 / Dart 3.12, camera plugin (plugin-based for step 1),
+  gal for saving to the system photo library.
+
+rules:
+  proposal:
+    - Keep proposals concise; include a Non-goals section.
+    - Use kebab-case capability names.
+  design:
+    - Explain why, alternatives, and the migration path to the AI step.
+  tasks:
+    - Break tasks into small, verifiable steps.
