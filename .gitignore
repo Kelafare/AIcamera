@@ -37,3 +37,6 @@ macos/Pods/
 # OS
 .DS_Store
 Thumbs.db
+
+# Kotlin build cache
+android/.kotlin/
