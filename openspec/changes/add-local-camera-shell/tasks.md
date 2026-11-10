@@ -35,6 +35,6 @@
 - [x] 5.1 `flutter analyze` 无错误
 - [x] 5.2 `flutter test` 通过
 - [x] 5.3 `flutter build apk --debug` 构建成功
-- [ ] 5.4 真机/模拟器手动验证拍照与保存
+- [x] 5.4 真机/模拟器手动验证拍照与保存
 - [x] 5.5 检查 iOS Info.plist 权限配置（Windows 上不做构建）
-- [ ] 5.6 在 `add-local-camera-shell` 分支提交第一步实现
+- [x] 5.6 在 `add-local-camera-shell` 分支提交第一步实现
